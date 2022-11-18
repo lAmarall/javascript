@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <style>
+        body{font: 18px Arial}
+        button{font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Coversor de Medidas</h1>
+    <button onclick="iniciar()">Converter medida</button>
+    <h2>Clique no botão acima para iniciar.</h2>
+    <script>
+        function iniciar(){
+            var metros = Number.parseFloat(prompt("Digite uma distância em metros(m)"))
+            var KM = metros / 1000
+            document.write(`A distância de ${metros}, corresponde a...`)
+            document.write(`${KM} quilômentros (KM)`)    
+        }
+    
+    </script>
+</body>
+</html>
