@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrindo a Nacionalidade</title>
+</head>
+<body>
+    <h1>Descobrindo a Nacionalidade</h1>
+    Aonde voce está vivendo?
+    <!--<input type="txtn" name="txtn" id="txtn"> <br><br>
+    <input type="button" value="Verificar" onclick="verificar()"> -->
+    <p><input type="checkbox" name="Brasil" id="Brasil" onclick="brasil()"> Brasil</p>
+    <p><input type="checkbox" name="Outro" id="Outro" onclick="estrangeiro()"> Outro</p>
+    <div id="vivendo"></div>
+
+    <script>
+        function verificar(){
+            var vida = document.getElementById('txtn')
+            if (vida == 'Brasil'){
+                vivendo.innerHTML = 'Voce é <strong>Brasileiro!</strong>'
+            }else{
+                vivendo.innerHTML = 'Voce é <strong>Estrangeiro!</strong>'
+            }
+        }
+        function brasil(){
+            vivendo.innerHTML = 'Voce é Brasileiro!!'
+        }
+        function estrangeiro(){
+            vivendo.innerHTML = 'Voce é Estrangeiro!!'
+        }
+    </script>
+</body>
+</html>
